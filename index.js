@@ -12,6 +12,7 @@ axios.get(`https://br1.api.riotgames.com/lol/summoner/v4/summoners/by-name/${sum
     const summonerLevel = response.data.summonerLevel
 
     console.log(`Nome: ${name}`, `Level: ${summonerLevel}`)
+    console.log(structure)
 }).catch(function (error) {
     if (error) {
         console.log(error)
